@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color : #C4B0D3;">
+
+	<script type="text/javascript">
+		var guessNumber;
+		var guessNumberInt;
+		var ran;
+		guessNumber = window.prompt("Guess the number from 1 to 10 :)");
+
+		guessNumberInt = parseInt(guessNumber);
+		ran = Math.floor((Math.random()*10)+1);
+
+		while (guessNumberInt != ran)
+		{
+			guessNumber = window.prompt("Please guess again :)");
+			guessNumberInt = parseInt(guessNumber);
+		}
+		document.writeln("<h1>You got it !!! The answer is " + ran + " :)</h1>")
+	</script>
+</body>
+</html>
